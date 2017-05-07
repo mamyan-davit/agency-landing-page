@@ -1,0 +1,244 @@
+/* Variables */
+/* Global Styles */
+body {
+  font-family: 'Lato', sans-serif; }
+
+* {
+  box-sizing: border-box; }
+
+.clearfix {
+  clear: both; }
+
+.wrapper {
+  width: 1440px;
+  max-width: 90%;
+  margin: 0 auto; }
+
+.button {
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 2rem 0 2rem; }
+
+.button-wrapper {
+  text-align: center;
+  margin: 3rem 0; }
+
+.button-highlight {
+  background-color: #85CA8D;
+  text-decoration: none; }
+  .button-highlight:hover {
+    background-color: #377f3f; }
+
+.button-secondary {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid transparent;
+  text-decoration: none; }
+  .button-secondary:hover {
+    background-color: rgba(128, 128, 128, 0.2); }
+
+.button-small {
+  padding: 0.7rem 1rem; }
+
+/* Header Styles */
+#banner {
+  background-image: url("../img/hero-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* So that image covers the whole div */ }
+  #banner header {
+    padding: 2rem 0; }
+    #banner header #logo {
+      float: left;
+      color: #ffffff;
+      font-weight: 700;
+      display: inline-block;
+      list-style: none;
+      font-size: 1.35rem;
+      margin-top: 1.2rem !important;
+      margin: 0; }
+    #banner header nav {
+      float: right;
+      margin-left: 5rem;
+      display: inline-block; }
+      #banner header nav ul li {
+        list-style: none;
+        float: left;
+        min-width: 7rem;
+        display: inline-block; }
+        #banner header nav ul li a {
+          color: #ffffff;
+          background: transparent;
+          display: inline-block;
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 1rem;
+          padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+          letter-spacing: 1px;
+          border: 1px solid transparent;
+          border-radius: 1rem;
+          margin-right: 1rem; }
+          #banner header nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid transparent;
+            border-radius: 1rem; }
+        #banner header nav ul li a.active {
+          background-color: rgba(255, 255, 255, 0.2);
+          border: 1px solid transparent;
+          border-radius: 1rem; }
+  #banner .content {
+    padding: 2rem 0 6rem 0;
+    margin: 5rem 0 0 0; }
+    #banner .content .title, #banner .content .sub-title {
+      color: #ffffff;
+      text-align: center; }
+    #banner .content .title {
+      font-size: 3rem;
+      margin: 0 0 3rem 0; }
+    #banner .content .sub-title {
+      font-weight: 400;
+      font-size: 1.3rem;
+      width: 500px;
+      margin: 3rem auto 2rem auto;
+      line-height: 1.7rem; }
+
+/* Services */
+#services {
+  background-color: #F0EFF5;
+  padding: 2rem 0 4.3rem 0;
+  position: relative;
+  min-height: 9rem; }
+  #services .service {
+    background-color: #ffffff;
+    width: 31%;
+    min-height: 9rem;
+    float: left;
+    margin: -5rem 1% 5rem 1%;
+    border-radius: 0.2rem;
+    padding: 3rem 2.5%;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 57px 0 rgba(4, 6, 9, 0.25);
+    -webkit-box-shadow: 0 0 57px 0 rgba(4, 6, 9, 0.25);
+    -moz-box-shadow: 0 0 57px 0 rgba(4, 6, 9, 0.25);
+    -o-box-shadow: 0 0 57px 0 rgba(4, 6, 9, 0.25); }
+    #services .service h3 {
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: #403D50; }
+    #services .service p {
+      margin: 0 0 2rem 0;
+      color: #403D50; }
+    #services .service .button {
+      display: inline-block;
+      padding: 1rem 1.5rem; }
+    #services .service:after {
+      content: " ";
+      position: absolute;
+      left: 50%;
+      bottom: -77px;
+      height: 77px;
+      border-left: 2px solid #c9c7d3; }
+  #services .middle:after {
+    bottom: -149px;
+    height: 149px; }
+  #services:before {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: 72px;
+    border-top: 2px solid #c9c7d3;
+    width: 59.5%;
+    margin-left: -30.1%; }
+
+/* Slider */
+#slider-jobs-wrapper {
+  padding: 1rem;
+  background-color: #403D50;
+  min-height: 20rem;
+  padding-bottom: 5rem;
+  display: block;
+  width: 100%; }
+  #slider-jobs-wrapper h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 3.7rem;
+    font-weight: 700; }
+  #slider-jobs-wrapper #work {
+    margin: 1rem 9rem;
+    text-align: center;
+    display: block; }
+    #slider-jobs-wrapper #work #works li {
+      float: left;
+      list-style: none;
+      margin-right: 0.8rem;
+      display: inline-block; }
+  #slider-jobs-wrapper #prev, #slider-jobs-wrapper #next {
+    float: left;
+    margin-top: 130px;
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+    /* without this, they don't lay on top */ }
+  #slider-jobs-wrapper #prev {
+    margin-right: -45px; }
+  #slider-jobs-wrapper #next {
+    margin-left: -45px;
+    margin-top: 185px !important; }
+  #slider-jobs-wrapper #slider {
+    float: left;
+    overflow: hidden;
+    width: 920px;
+    height: 350px;
+    /* necessary */
+    padding: 3px;
+    border: 3px solid #666;
+    position: relative;
+    /* see above */
+    margin-left: 8rem;
+    margin-top: 3rem; }
+  #slider-jobs-wrapper .slide {
+    position: absolute; }
+  #slider-jobs-wrapper .slide-copy {
+    /* text inside */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    margin-bottom: 15px;
+    background: #666;
+    background: rgba(0, 0, 0, 0.5); }
+
+/* Get in Touch (pre footer) */
+#get-in-touch {
+  background-color: #F0EFF5;
+  min-height: 20rem;
+  padding: 6rem 7rem; }
+  #get-in-touch .title {
+    margin-top: 0;
+    color: #403D50;
+    text-align: center; }
+  #get-in-touch .sub-title {
+    width: 500px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto 4rem auto;
+    color: #9D9AAF;
+    margin: 1rem auto 3rem auto;
+    line-height: 1.7rem;
+    font-weight: 400;
+    font-size: 1.3rem; }
+  #get-in-touch .button {
+    text-align: center; }
+
+#footer {
+  padding: 2rem;
+  background-color: #403D50; }
+  #footer p, #footer a {
+    text-align: center;
+    color: #9D9AAF;
+    text-decoration: none; }
